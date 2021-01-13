@@ -14,7 +14,7 @@ class PredictorConfig(AppConfig):
         
 
     model = data['model']
-    le_Geomorphology = data['le_Geomorphology']
+    # le_Geomorphology = data['le_Geomorphology']
     le_RockChar = data['le_RockChar']
     le_OverburdenThickness = data['le_OverburdenThickness'] 
     le_Hydrology = data['le_Hydrology']

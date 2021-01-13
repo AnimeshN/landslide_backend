@@ -21,5 +21,5 @@ from predictor import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/<str:Geomorphology>/<str:RockChar>/<str:OverburdenThickness>/<str:Hydrology>/<str:Erosion>/<str:Rainfall>/<str:Anthropogenic>/<str:SlopeType>/<str:LandslideMaterial>/<str:Movement>/<str:Style>', views.descisionTree.as_view(), name='earthquake'),
+    path('api/<str:RockChar>/<str:OverburdenThickness>/<str:Hydrology>/<str:Erosion>/<str:Rainfall>/<str:Anthropogenic>/<str:SlopeType>/<str:LandslideMaterial>/<str:Movement>/<str:Style>', views.descisionTree.as_view(), name='earthquake'),
 ]

@@ -14,7 +14,7 @@ target = df['Susceptibility']
 
 #label encoder
 
-le_Geomorphology = LabelEncoder()
+# le_Geomorphology = LabelEncoder()
 le_RockChar = LabelEncoder()
 le_OverburdenThickness = LabelEncoder()
 le_Hydrology = LabelEncoder()
@@ -41,7 +41,7 @@ le_target = LabelEncoder()
 
 
 inputs_n = pd.DataFrame()
-inputs_n['Geomorphology'] = le_Geomorphology.fit_transform(inputs['Geomorphology'])
+# inputs_n['Geomorphology'] = le_Geomorphology.fit_transform(inputs['Geomorphology'])
 inputs_n['RockChar'] = le_RockChar.fit_transform(inputs['RockChar'])
 inputs_n['OverburdenThickness'] = le_OverburdenThickness.fit_transform(inputs['OverburdenThickness'])
 inputs_n['Hydrology'] = le_Hydrology.fit_transform(inputs['Hydrology'])
@@ -64,7 +64,7 @@ model.fit(inputs_n,target_n)
 
 
 pickl = {
-    'le_Geomorphology':le_Geomorphology,
+    # 'le_Geomorphology':le_Geomorphology,
     'le_RockChar': le_RockChar,
     'le_OverburdenThickness':le_OverburdenThickness, 
     'le_Hydrology': le_Hydrology,
